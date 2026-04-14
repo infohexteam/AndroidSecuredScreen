@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="demo_background">#FF151310</color>
+    <color name="demo_surface">#FF1D1B18</color>
+    <color name="demo_accent">#FFFFB59F</color>
+    <color name="demo_text_primary">#FFEAE1D7</color>
+    <color name="demo_text_secondary">#FFD3C4B6</color>
+    <color name="demo_field_tint">#FF7AB2B6</color>
+    <color name="demo_hint">#FFB2A79A</color>
+    <color name="demo_overlay_scrim">#D915171A</color>
+    <color name="demo_overlay_title">#FFA8D5C3</color>
+    <color name="demo_overlay_body">#FFE1EFE8</color>
+</resources>

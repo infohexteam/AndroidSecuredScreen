@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Secure Screen Demo</string>
+    <string name="home_title">Best-effort protection from Accessibility</string>
+    <string name="home_subtitle">This demo shows the difference between a regular screen and a hidden mode that blocks the accessibility tree, sets FLAG_SECURE, and marks the root View as sensitive where supported.</string>
+    <string name="switch_title">Hide screen content</string>
+    <string name="switch_summary_off">Mode is off: the accessibility service can read text and field values.</string>
+    <string name="switch_summary_on">Mode is on: secure-ui blocks the tree and hides content from the accessibility service on a best-effort basis.</string>
+    <string name="compose_screen_title">Compose Screen</string>
+    <string name="xml_screen_title">XML Screen</string>
+    <string name="open_compose">Open Compose screen</string>
+    <string name="open_xml">Open XML screen</string>
+    <string name="open_accessibility_settings">Open Accessibility settings</string>
+    <string name="open_attacker_app">Open attacker app</string>
+    <string name="attacker_missing">Install the attacker module and enable its Accessibility Service in settings.</string>
+    <string name="compose_secret_text">Compose secret: confirmation code 517 204 and backup phrase orbit stone maple.</string>
+    <string name="compose_login_label">Client login</string>
+    <string name="compose_login_value">ceo@secured.demo</string>
+    <string name="compose_password_label">Password</string>
+    <string name="compose_password_value">P@55w0rd!compose</string>
+    <string name="compose_card_label">Card number</string>
+    <string name="compose_card_value">4242 4242 4242 4242</string>
+    <string name="overlay_title">Secure mode enabled</string>
+    <string name="overlay_body">The `secure-ui` library has hidden the accessibility tree and added extra best-effort flags. An external Accessibility Service should no longer receive sensitive content from this screen.</string>
+    <string name="overlay_hide_inline">Hide this demo banner</string>
+    <string name="xml_title">XML screen with sensitive content</string>
+    <string name="xml_secret_label">Secret text</string>
+    <string name="xml_secret_value">XML: access token A1B2-C3D4-E5F6 and internal PIN 7788.</string>
+    <string name="xml_email_hint">Employee email</string>
+    <string name="xml_email_value">finance@secured.demo</string>
+    <string name="xml_password_hint">CRM password</string>
+    <string name="xml_password_value">Xml-P@ss-981</string>
+    <string name="xml_account_hint">Account number</string>
+    <string name="xml_account_value">40702810900000012345</string>
+    <string name="back">Back</string>
+    <string name="status_off">The screen is currently visible to accessibility.</string>
+    <string name="status_on">The screen is currently hidden from accessibility by a best-effort policy.</string>
+</resources>
