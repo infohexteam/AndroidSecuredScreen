@@ -6,4 +6,4 @@
     android:canRetrieveWindowContent="true"
     android:description="@string/service_description"
     android:notificationTimeout="50"
-    android:packageNames="com.grigorevmp.securedscreen" />
+    android:packageNames="com.hexteam.screenprotect.securedscreen" />

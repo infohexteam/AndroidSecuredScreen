@@ -159,7 +159,7 @@ dependencyResolutionManagement {
 
 ```kotlin
 dependencies {
-    implementation("com.github.grigorevmp:SecuredScreen:secure-ui:<tag>")
+    implementation("com.github.infohexteam:AndroidSecuredScreen:secure-ui:<tag>")
 }
 ```
 
@@ -181,7 +181,7 @@ dependencies {
 repositories {
     maven {
         name = "GitHubPackages"
-        url = uri("https://maven.pkg.github.com/grigorevmp/SecuredScreen")
+        url = uri("https://maven.pkg.github.com/infohexteam/AndroidSecuredScreen")
         credentials {
             username = System.getenv("GITHUB_ACTOR") ?: project.findProperty("gpr.user") as String? ?: ""
             password = System.getenv("GITHUB_TOKEN") ?: project.findProperty("gpr.token") as String? ?: ""
@@ -209,7 +209,7 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven {
-            url = uri("https://maven.pkg.github.com/grigorevmp/SecuredScreen")
+            url = uri("https://maven.pkg.github.com/infohexteam/AndroidSecuredScreen")
             credentials {
                 username = providers.gradleProperty("gpr.user").orNull ?: System.getenv("GITHUB_ACTOR") ?: ""
                 password = providers.gradleProperty("gpr.token").orNull ?: System.getenv("GITHUB_TOKEN") ?: ""
@@ -223,7 +223,7 @@ dependencyResolutionManagement {
 
 ```kotlin
 dependencies {
-    implementation("com.grigorevmp:secure-ui:1.0.0")
+    implementation("com.hexteam.screenprotect:secure-ui:1.0.0")
 }
 ```
 
@@ -270,7 +270,7 @@ dependencies {
 ./gradlew :secure-ui:publishReleasePublicationToMavenLocal
 ```
 
-Артефакт попадёт в `~/.m2/repository/com/grigorevmp/secure-ui/1.0.0/`.
+Артефакт попадёт в `~/.m2/repository/com/hexteam/screenprotect/secure-ui/1.0.0/`.
 
 **Подключение:**
 
@@ -286,6 +286,6 @@ dependencyResolutionManagement {
 
 // build.gradle.kts модуля
 dependencies {
-    implementation("com.grigorevmp:secure-ui:1.0.0")
+    implementation("com.hexteam.screenprotect:secure-ui:1.0.0")
 }
 ```

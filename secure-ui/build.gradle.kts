@@ -4,7 +4,7 @@ plugins {
     `maven-publish`
 }
 
-val libGroup = "com.grigorevmp"
+val libGroup = "com.hexteam.screenprotect"
 val libArtifact = "secure-ui"
 val libVersion = "1.0.0"
 
@@ -12,7 +12,7 @@ group = libGroup
 version = libVersion
 
 android {
-    namespace = "com.grigorevmp.secureui"
+    namespace = "com.hexteam.screenprotect.secureui"
     compileSdk = 36
 
     defaultConfig {
@@ -60,7 +60,7 @@ afterEvaluate {
                         "AccessibilityService snooping, screenshots, screen recording, " +
                         "overlay attacks, and assist/autofill data leaks."
                     )
-                    url.set("https://github.com/grigorevmp/SecuredScreen")
+                    url.set("https://github.com/infohexteam/AndroidSecuredScreen")
 
                     licenses {
                         license {
@@ -75,9 +75,9 @@ afterEvaluate {
                         }
                     }
                     scm {
-                        connection.set("scm:git:git://github.com/grigorevmp/SecuredScreen.git")
-                        developerConnection.set("scm:git:ssh://github.com/grigorevmp/SecuredScreen.git")
-                        url.set("https://github.com/grigorevmp/SecuredScreen")
+                        connection.set("scm:git:git://github.com/infohexteam/AndroidSecuredScreen.git")
+                        developerConnection.set("scm:git:ssh://github.com/infohexteam/AndroidSecuredScreen.git")
+                        url.set("https://github.com/infohexteam/AndroidSecuredScreen")
                     }
                 }
             }

@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.grigorevmp.attacker"
+    namespace = "com.hexteam.screenprotect.attacker"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.grigorevmp.attacker"
+        applicationId = "com.hexteam.screenprotect.attacker"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

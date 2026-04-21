@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.grigorevmp.securedscreen"
+    namespace = "com.hexteam.screenprotect.securedscreen"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.grigorevmp.securedscreen"
+        applicationId = "com.hexteam.screenprotect.securedscreen"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -36,19 +36,11 @@ android {
 }
 
 dependencies {
-    // secure-ui: use the compiled AAR instead of the project module
-    implementation(files("libs/secure-ui-release.aar"))
-
-    // secure-ui transitive dependencies (the AAR does not pull them in automatically)
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
-    implementation(libs.androidx.activity.compose)
-    implementation(platform(libs.androidx.compose.bom))
-    implementation(libs.androidx.compose.foundation)
-    implementation(libs.androidx.compose.ui)
+    implementation(project(":secure-ui"))
 
     // App dependencies
+    implementation(libs.androidx.core.ktx)
+    implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
